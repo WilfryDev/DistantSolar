@@ -1,0 +1,18 @@
+name: xAlmas
+version: '1.0.0'
+main: jn.willfrydev.xalmas.XAlmas
+api-version: '1.16'
+author: xPlugins
+description: Sistema premium de economía de almas PvP.
+depend:
+  - PlaceholderAPI
+
+commands:
+  xa:
+    description: Comando principal de gestión de almas.
+    aliases: [xalmas, almas]
+
+permissions:
+  xalmas.admin:
+    description: Permite dar almas y recargar el plugin.
+    default: op

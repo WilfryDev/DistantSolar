@@ -1,0 +1,75 @@
+#            _   _
+#   __  __ /_\ | |_ __ ___   __ _ ___
+#   \ \/ ///_\\| | '_ ` _ \ / _` / __|
+#    >  </  _  \ | | | | | | (_| \__ \
+#   /_/\_\_/ \_/_|_| |_| |_|\__,_|___/
+
+#       Discord: https://discord.gg/xplugins
+#      Wiki: https://xplugins.es/plugins/xalmas
+#      Version v1.0.0 - Powered by xPLugins
+
+options:
+
+  # Worlds where souls will NOT be given upon a kill
+  disabled-worlds:
+    - "world_the_end"
+    - "spawn_world"
+
+  # Modo de entrega del alma: INVENTORY (Directo al asesino) o DROP (Cae donde murió la víctima)
+  drop-mode: "INVENTORY"
+
+  # ¿Qué ítem de almas.yml se dará al matar a alguien?
+  # Puedes poner el nombre exacto (ej. "muertes" o "alma_premium")
+  # o puedes poner "aleatorio" para que dé uno al azar de la lista.
+  item-to-drop: "aleatorio"
+
+  anti-farming:
+    # Prevents players with the same IP from farming souls
+    block-same-ip: true
+    # Cooldown time (in seconds) to get a soul from the SAME player again
+    player-cooldown: 300
+
+sounds:
+  receive-soul:
+    enabled: true
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 1.0
+    pitch: 0.8
+
+messages:
+  # Set to 'false' (without quotes) to disable the prefix
+  prefix: "&#555555[&#FACBCBxAlmas&#555555] "
+
+  no-permission: "&#FF5555✖ No tienes permisos suficientes."
+  reload-success: "&#55FF55✔ Configuración y datos recargados correctamente."
+
+  # PvP Messages
+  soul-received: "&#55FF55☠ ¡Has cobrado el alma de &#FACBCB<victima>&#55FF55!"
+  anti-farming-ip: "&#FF5555✖ No puedes obtener almas de jugadores con tu misma IP."
+  anti-farming-cooldown: "&#FFFF55⚠ Debes esperar &#FACBCB<tiempo>s&#FFFF55 para volver a cobrar el alma de este jugador."
+
+  # Command Messages
+  player-offline: "&#FF5555✖ El jugador especificado no está en línea."
+  invalid-amount: "&#FF5555✖ La cantidad especificada no es un número válido."
+  invalid-currency: "&#FF5555✖ Esa moneda no existe en almas.yml."
+  item-given: "&#55FF55✔ Has dado &#FACBCB<cantidad> <moneda>&#55FF55 a <jugador>."
+
+  #             Mensaje de Ayuda
+  help-message:
+    - ""
+    - "          &#FACBCB⚡ xAlmas ⚡"
+    - ""
+    - "  &#FACBCB/xa give <moneda> <cant> &8▸ &fDarte almas"
+    - "  &#FACBCB/xa reload &8▸ &fRecarga la configuración"
+    - ""
+    - "&7     ☄ By xPlugins Community ❤"
+    - ""
+
+version: v1.0.0
+
+#             PLACEHOLDERS                 #
+# Variables disponibles para PlaceholderAPI:
+#
+# %xa_almas% : Muestra la cantidad total de
+#     almas que ha recolectado el jugador.
+#

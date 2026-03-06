@@ -1,0 +1,35 @@
+items:
+  muertes:
+    material: "RED_DYE"
+    name: "<#FACBCB>☠ Alma <bold><#FACBCB>F<#EED1D0>A<#E2D8D5>N<#D5DED9>I<#C9E4DE>A</bold> <#FACBCB>♫"
+    lore:
+      - ""
+      - "<dark_gray> ℹ Información  "
+      - ""
+      - "<white> Intercambia esta moneda por  "
+      - "<white> increíbles llaves en el spawn.  "
+      - ""
+      - "<#FACBCB> ▸ ¡Colecciónalas!   "
+      - ""
+    enchantments:
+      - "DURABILITY:3"
+    flags:
+      - "HIDE_ENCHANTS"
+
+  alma_premium:
+    material: "PLAYER_HEAD"
+    base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRjODgwNTNjMWE4NTNmNzE2NmM5ZTkzYmIzYzUxN2YwODE5NTQ0NzM5ZGJlYWJkNDhhODU5Y2VkNDIwYjcwYiJ9fX0="
+    name: "&#FACBCB☠ Alma Premium &#FACBCB&lF&#EED1D0&lA&#E2D8D5&lN&#D5DED9&lI&#C9E4DE&lA &#FACBCB♫"
+    lore:
+      - ""
+      - "&8 ℹ Información  "
+      - ""
+      - "&f Intercambia esta moneda rara por  "
+      - "&f recompensas VIP en el spawn.  "
+      - ""
+      - "&#FACBCB ▸ ¡Edición Especial!   "
+      - ""
+    enchantments:
+      - "DURABILITY:3"
+    flags:
+      - "HIDE_ENCHANTS"
