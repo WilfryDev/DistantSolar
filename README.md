@@ -117,7 +117,7 @@ dependencies {
     <dependency>
         <groupId>com.github.WilfryDev</groupId>
         <artifactId>xAlmas</artifactId>
-        <version>1.0.0</version>
+        <version>v1.0.1</version>
         <scope>provided</scope>
     </dependency>
 </dependencies>
